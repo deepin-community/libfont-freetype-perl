@@ -1,0 +1,30 @@
+Source: libfont-freetype-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Anthony Fok <foka@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               libdevel-checklib-perl,
+               libfile-which-perl,
+               libfreetype-dev | libfreetype6-dev,
+               libtest-warnings-perl <!nocheck>,
+               perl-xs-dev,
+               perl:native
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libfont-freetype-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libfont-freetype-perl.git
+Homepage: https://metacpan.org/release/Font-FreeType
+Rules-Requires-Root: no
+
+Package: libfont-freetype-perl
+Architecture: any
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends}
+Description: module to read font files and render glyphs from Perl using FreeType2
+ Font::FreeType allows Perl programs to conveniently read information from
+ font files.  All the font access is done through the FreeType2 library,
+ which supports many formats.  It can render images of characters with
+ high-quality hinting and antialiasing, extract metrics information, and
+ extract the outlines of characters in scalable formats like TrueType.

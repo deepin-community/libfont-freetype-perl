@@ -1,0 +1,207 @@
+libfont-freetype-perl (0.16-1-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Thu, 24 Nov 2022 07:21:18 +0800
+
+libfont-freetype-perl (0.16-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * debian/control: update Build-Depends for cross builds.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ gregor herrmann ]
+  * Import upstream version 0.16.
+  * Refresh 02_new_functions.patch (offset).
+  * Update years of packaging copyright.
+  * Set Rules-Requires-Root: no.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 15 May 2020 23:38:53 +0200
+
+libfont-freetype-perl (0.13-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 0.13.
+  * Drop fix-font-metrics.patch, fixed upstream.
+  * Remove version constraint from libfreetype6-dev alternative build
+    dependency. The fix in the tests is supposed to work with older and
+    newer versions of freetype.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 20 Oct 2019 11:40:00 +0200
+
+libfont-freetype-perl (0.12-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add patch to adjust tests to FreeType 2.10.
+    Thanks to Hugh McMaster for the bug report and the patch.
+    (Closes: #942439)
+  * Update Build-Depends.
+    Add libfreetype-dev (new real package) as a first alternative to
+    (now virtual package) libfreetype6-dev.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Declare compliance with Debian Policy 4.4.1.
+  * Bump debhelper-compat to 12.
+  * debian/watch: use uscan version 4.
+  * Remove obsolete fields Name, Contact from debian/upstream/metadata.
+  * Update years of packaging copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 16 Oct 2019 16:46:07 +0200
+
+libfont-freetype-perl (0.12-1) unstable; urgency=medium
+
+  * Team upload
+  * Import upstream version 0.12
+  * Refresh 02_new_functions.patch (offset)
+  * Declare compliance with Debian Policy 4.2.1
+
+ -- Florian Schlichting <fsfs@debian.org>  Fri, 21 Dec 2018 21:56:20 +0100
+
+libfont-freetype-perl (0.10-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Damyan Ivanov ]
+  * declare conformance with Policy 4.1.3 (no changes needed)
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * Import upstream version 0.10.
+  * Refresh 02_new_functions.patch (offset).
+  * Update years of packaging copyright.
+  * Bump debhelper compatibility level to 10.
+  * Drop debian/tests/pkg-perl/smoke-skip. The pod test is skipped anyway,
+    as there is no lib/ directory during autopkgtests.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 25 Mar 2018 18:57:52 +0200
+
+libfont-freetype-perl (0.09-1) unstable; urgency=medium
+
+  * Team upload.
+  * Fix typo in previous changelog entry.
+
+  * Import upstream version 0.09.
+  * Refresh 02_new_functions.patch (offset).
+  * Drop Fallback_to_default_charmap_for_2.8.1.patch which was cherry-
+    picked from upstream.
+  * autopkgtest: run `perl Makefile.PL' before smoke tests.
+    The generated t/data/bdf_glyphs.txt is needed in the test suite.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 19 Oct 2017 16:35:12 +0200
+
+libfont-freetype-perl (0.07-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * Fix typo in long description.
+    Thanks to Dmitry Smirnov for the bug report. (Closes: #802771)
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Add patch from upstream pull request for freetype6 2.8.1
+    compatibility.
+    Thanks to Adrian Bunk for the bug report. (Closes: #878632)
+  * Set bindnow linker flag in debian/rules.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.1.1.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 17 Oct 2017 16:40:30 +0200
+
+libfont-freetype-perl (0.07-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 0.07.
+  * Rename autopkgtest configuration file.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 18 Oct 2015 16:10:33 +0200
+
+libfont-freetype-perl (0.07~2-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream devel release 0.07_2.
+    This is supposed to fix #799888.
+  * Refresh 02_new_functions.patch (offset).
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 24 Sep 2015 22:37:32 +0200
+
+libfont-freetype-perl (0.06-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 0.06
+
+ -- Lucas Kanashiro <kanashiro.duarte@gmail.com>  Mon, 21 Sep 2015 11:43:22 -0300
+
+libfont-freetype-perl (0.05-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * New upstream release.
+    Fixes "Font::FreeType 0.05 is available" (Closes: #787745)
+  * Add debian/upstream/metadata.
+  * Drop 01_build_fix.patch, merged upstream.
+  * Refresh 02_new_functions.patch (offset).
+  * Drop 03_spelling.patch, merged upstream.
+  * Update years of packaging copyright.
+  * Add new build dependencies.
+  * Declare compliance with Debian Policy 3.9.6.
+  * debian/rules: enable testsuite.
+  * Mark package as autopkgtest-able.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 07 Jun 2015 19:47:00 +0200
+
+libfont-freetype-perl (0.03-2) unstable; urgency=low
+
+  * Team upload.
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ gregor herrmann ]
+  * debian/watch: remove commented out lines.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * Switch to "3.0 (quilt)" source format.
+  * debian/rules: use short-form dh(1).
+  * Patches: convert from dpatch to quilt.
+  * debian/copyright: switch formatting to Copyright-Format 1.0.
+  * Use debhelper 9.20120312 to get all hardening flags.
+  * Update short and long description.
+  * Add a patch to fix a spelling mistake.
+  * Declare compliance with Debian Policy 3.9.5.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 22 Feb 2014 18:00:38 +0100
+
+libfont-freetype-perl (0.03-1) unstable; urgency=low
+
+  * Initial release. (Closes: #492546)
+  * Applied build.patch found in openSUSE perl-Font-FreeType-0.03-51.1
+    source RPM package to fix compilation error.  Many thanks!
+
+ -- Anthony Fok <foka@debian.org>  Sun, 27 Jul 2008 13:12:44 +0800
