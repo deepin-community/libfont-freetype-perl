@@ -4,14 +4,14 @@ Uploaders: Anthony Fok <foka@debian.org>
 Section: perl
 Testsuite: autopkgtest-pkg-perl
 Priority: optional
-Build-Depends: debhelper-compat (= 12),
+Build-Depends: debhelper-compat (= 13),
                libdevel-checklib-perl,
                libfile-which-perl,
-               libfreetype-dev | libfreetype6-dev,
+               libfreetype-dev,
                libtest-warnings-perl <!nocheck>,
                perl-xs-dev,
                perl:native
-Standards-Version: 4.5.0
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libfont-freetype-perl
 Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libfont-freetype-perl.git
 Homepage: https://metacpan.org/release/Font-FreeType
