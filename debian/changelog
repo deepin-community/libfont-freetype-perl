@@ -1,8 +1,23 @@
-libfont-freetype-perl (0.16-1-deepin1) unstable; urgency=medium
+libfont-freetype-perl (0.16-3) unstable; urgency=medium
 
-  * Rebuild
+  * Team upload.
+  * Drop alternative build dependency on the virtual libfreetype6-dev
+    package.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.6.2.
 
- -- Deepin Packages Builder <packages@deepin.org>  Thu, 24 Nov 2022 07:21:18 +0800
+ -- gregor herrmann <gregoa@debian.org>  Mon, 17 Jul 2023 19:54:21 +0200
+
+libfont-freetype-perl (0.16-2) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Update 'DEB_BUILD_MAINT_OPTIONS = hardening=+bindnow' to '=+all'.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.6.0, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Tue, 06 Dec 2022 22:58:59 +0000
 
 libfont-freetype-perl (0.16-1) unstable; urgency=medium
 

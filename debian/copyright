@@ -70,7 +70,7 @@ License: other
    fonts at gnome dot org.
 
 Files: debian/*
-Copyright: 2008-2020, gregor herrmann <gregoa@debian.org>
+Copyright: 2008-2023, gregor herrmann <gregoa@debian.org>
  2008, Anthony Fok <foka@debian.org>
 License: Artistic or GPL-1+
 
